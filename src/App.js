@@ -1,3 +1,4 @@
+// setting up feature 1
 import "./App.css";
 
 const App = () => {
