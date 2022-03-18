@@ -1,0 +1,52 @@
+{
+	"products": [
+		{
+			"_id": "item1",
+			"title": "Orange",
+			"image": "/images/orange.jpg",
+			"description": "Fruits section",
+			"price": 1.21,
+			"availablePacks": ["M", "L", "F"]
+		},
+		{
+			"_id": "item2",
+			"title": "Avacado",
+			"image": "/images/avocado.jpg",
+			"description": "Fruits section",
+			"price": 3.55,
+			"availablePacks": ["S", "M", "L"]
+		},
+		{
+			"_id": "item3",
+			"title": "Celery",
+			"image": "/images/celery.jpg",
+			"description": "Vegetable section",
+			"price": 2.77,
+			"availablePacks": ["S", "F"]
+		},
+		{
+			"_id": "item4",
+			"title": "Apple",
+			"image": "/images/apple.jpg",
+			"description": "Fruits section",
+			"price": 3.93,
+			"availablePacks": ["S", "M", "L", "F"]
+		},
+		{
+			"_id": "item5",
+			"title": "Baby Carrot",
+			"image": "/images/baby-carrot.jpg",
+			"description": "Vegetable section",
+			"price": 2.39,
+			"availablePacks": ["M", "F"]
+		},
+		{
+			"_id": "item6",
+			"title": "Black Grapes",
+			"image": "/images/black-grapes.jpg",
+			"description": "Fruits section",
+			"price": 4.57,
+			"availablePacks": ["S", "M"]
+		}
+	]
+}
