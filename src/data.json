@@ -6,7 +6,7 @@
 			"image": "/images/orange.jpg",
 			"description": "Fruits section",
 			"price": 1.21,
-			"availablePacks": ["M", "L", "F"]
+			"availablePacks": ["M", "L"]
 		},
 		{
 			"_id": "item2",
@@ -22,7 +22,7 @@
 			"image": "/images/celery.jpg",
 			"description": "Vegetable section",
 			"price": 2.77,
-			"availablePacks": ["S", "F"]
+			"availablePacks": ["S"]
 		},
 		{
 			"_id": "item4",
@@ -38,7 +38,7 @@
 			"image": "/images/baby-carrot.jpg",
 			"description": "Vegetable section",
 			"price": 2.39,
-			"availablePacks": ["M", "F"]
+			"availablePacks": ["F"]
 		},
 		{
 			"_id": "item6",
