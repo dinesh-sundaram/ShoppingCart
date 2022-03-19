@@ -2,7 +2,7 @@
 	"products": [
 		{
 			"_id": "item1",
-			"title": "Orange",
+			"title": "Orange Shopping Cart with Fruits",
 			"image": "/images/orange.jpg",
 			"description": "Fruits section",
 			"price": 1.21,
@@ -10,7 +10,7 @@
 		},
 		{
 			"_id": "item2",
-			"title": "Avacado",
+			"title": "Avacado Shopping Cart with Fruits",
 			"image": "/images/avocado.jpg",
 			"description": "Fruits section",
 			"price": 3.55,
@@ -18,7 +18,7 @@
 		},
 		{
 			"_id": "item3",
-			"title": "Celery",
+			"title": "Celery Shopping Cart with Fruits",
 			"image": "/images/celery.jpg",
 			"description": "Vegetable section",
 			"price": 2.77,
@@ -26,7 +26,7 @@
 		},
 		{
 			"_id": "item4",
-			"title": "Apple",
+			"title": "Apple Shopping Cart with Fruits",
 			"image": "/images/apple.jpg",
 			"description": "Fruits section",
 			"price": 3.93,
@@ -34,7 +34,7 @@
 		},
 		{
 			"_id": "item5",
-			"title": "Baby Carrot",
+			"title": "Baby Carrot Shopping Cart with Fruits",
 			"image": "/images/baby-carrot.jpg",
 			"description": "Vegetable section",
 			"price": 2.39,
@@ -42,7 +42,7 @@
 		},
 		{
 			"_id": "item6",
-			"title": "Black Grapes",
+			"title": "Black Grapes Shopping Cart with Fruits",
 			"image": "/images/black-grapes.jpg",
 			"description": "Fruits section",
 			"price": 4.57,
