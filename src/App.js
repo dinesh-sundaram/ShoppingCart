@@ -9,14 +9,29 @@ import Cart from "./components/Cart";
 class App extends Component {
 	constructor() {
 		super();
-		this.state = { products: data.products, cartItems: [], size: "", sort: "" };
+		this.state = {
+			products: data.products,
+			cartItems: localStorage.getItem("cartItems")
+				? JSON.parse(localStorage.getItem("cartItems"))
+				: [],
+			size: "",
+			sort: "",
+		};
 	}
+
+	createOrder = (order) => {
+		alert("you have " + order.name);
+	};
 
 	removeFromCart = (product) => {
 		const cartItems = this.state.cartItems.slice();
 		this.setState({
 			cartItems: cartItems.filter((item) => item._id !== product._id),
 		});
+		localStorage.setItem(
+			"cartItems",
+			JSON.stringify(cartItems.filter((item) => item._id !== product._id))
+		);
 	};
 
 	addToCart = (product) => {
@@ -33,10 +48,11 @@ class App extends Component {
 			cartItems.push({ ...product, count: 1 });
 		}
 		this.setState({ cartItems });
+		localStorage.setItem("cartItems", JSON.stringify(cartItems));
 	};
 
 	sortProducts = (event) => {
-		console.log(event.target.value);
+		// console.log(event.target.value);
 		const sort = event.target.value;
 
 		this.setState((state) => ({
@@ -60,7 +76,7 @@ class App extends Component {
 	};
 
 	filterProducts = (event) => {
-		console.log(event.target.value);
+		// console.log(event.target.value);
 		if (event.target.value === "") {
 			this.setState({ size: event.target.value, products: data.products });
 		} else {
@@ -98,6 +114,7 @@ class App extends Component {
 							<Cart
 								cartItems={this.state.cartItems}
 								removeFromCart={this.removeFromCart}
+								createOrder={this.createOrder}
 							/>
 						</div>
 					</div>
