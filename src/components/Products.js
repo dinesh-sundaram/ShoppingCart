@@ -19,6 +19,7 @@ class Products extends Component {
 	}
 
 	openModal = (product) => {
+		// console.log("open-modal -click", product._id);
 		this.setState({ product });
 	};
 
@@ -105,6 +106,9 @@ class Products extends Component {
 	}
 }
 
-export default connect((state) => ({ products: state.products.items }), {
-	fetchProducts,
-})(Products);
+export default connect(
+	(state) => ({ products: state.products.filteredItems }),
+	{
+		fetchProducts,
+	}
+)(Products);
